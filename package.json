@@ -1,0 +1,28 @@
+{
+  "name": "sitemejs",
+  "version": "1.0.0",
+  "description": "Proyecto SiteMe desarrollado con NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: No se han especificado tests\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mfortea/sitemejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript"
+  ],
+  "author": "mfortea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mfortea/sitemejs/issues"
+  },
+  "homepage": "https://github.com/mfortea/sitemejs#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "twig": "^1.15.4"
+  }
+}

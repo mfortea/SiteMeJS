@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="imagenes/favicon.png" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>SiteMe - Sin conexión</title>
+</head>
+
+<body class="noConex-body">
+    <p class="logo-offline"><span>Site</span>Me</p>
+    <h1 class="emoji-offline">😭</h1>
+    <h1>¡Vaya!</h1>
+    <h2>Parece que no tienes conexión</h2>
+    <h2 class="reconectando">Reconectando ...</h2>
+    <br>
+    <span class="copy-offline">&copy; SiteMe</span>
+    <script>
+        window.addEventListener("online", () => (window.location.href = "/"));
+    </script>
+</body>
+
+</html>

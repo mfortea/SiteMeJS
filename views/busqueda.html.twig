@@ -5,10 +5,10 @@
 	- Búsqueda
 {% endblock %}
 {% block stylesheets %}
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/micromodal.css') }}"/>
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/all.min.css') }}"/>
+	<link rel="stylesheet" type="text/css" href="css/micromodal.css"/>
+	<link rel="stylesheet" type="text/css" href="css/all.min.css"/>
 	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/Control.FullScreen.css') }}"/>
+	<link rel="stylesheet" type="text/css" href="css/Control.FullScreen.css"/>
 	<link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css"/>
 {% endblock %}
 
@@ -18,26 +18,26 @@
 	</noscript>
 	<body onload="obtenerCoordenadas('busqueda')">
 		<nav id="menu" class="navbar navbar-expand-md navbar-light fixed-top text-center">
-			<a class="navbar-brand" href="{{ path('busqueda') }}"><img alt="Logo de SiteMe" class="p-3" src="imagenes/logo_letras.png" width="200px"/></a>
+			<a class="navbar-brand" href="/busqueda"><img alt="Logo de SiteMe" class="p-3" src="imagenes/logo SiteMeJS.png" width="200px"/></a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item pagActual active m-2">
-						<a class="nav-link" href="{{ path('busqueda') }}">
+						<a class="nav-link" href="/busqueda">
 							<i class="fas fa-search"></i>
 							&nbsp; Búsqueda
 							<span class="sr-only">(current)</span>
 						</a>
 					</li>
 					<li class="nav-item active m-2">
-						<a class="nav-link" href="{{ path('sitios') }}">
+						<a class="nav-link" href="/sitios">
 							<i class="fas fa-star"></i>
 							&nbsp; Mis sitios</a>
 					</li>
 					<li class="nav-item active m-2 dropdown">
-						<a class="nav-link dropdown-toggle" href="{{ path('ajustes') }}" role="button" id="navbarDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						<a class="nav-link dropdown-toggle" href="/ajustes" role="button" id="navbarDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<i class="fas fa-user"></i>
 							&nbsp; Mi perfil</a>
 						<ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
@@ -45,12 +45,12 @@
 								<a class="dropdown-item disabled" href="#">{{ app.user.username }}</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="{{ path('ajustes') }}">
+								<a class="dropdown-item" href="/ajustes">
 									<i class="fas fa-cog"></i>
 									&nbsp; Ajustes de perfil</a>
 							</li>
 							<li>
-								<a class="dropdown-item" href="{{ path('app_logout') }}">
+								<a class="dropdown-item" href="/logout">
 									<i class="fas fa-sign-out-alt"></i>
 									&nbsp; Cerrar sesión</a>
 							</li>
@@ -118,11 +118,11 @@
 {% endblock %}
 
 {% block javascripts %}
-	<script src="{{ asset('js/utiles.js') }}"></script>
-	<script src="{{ asset('js/busqueda.js') }}"></script>
-	<script src="{{ asset('js/efectosInterfaz.js') }}"></script>
+	<script src="js/utiles.js"></script>
+	<script src="js/busqueda.js"></script>
+	<script src="js/efectosInterfaz.js"></script>
 	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
 	<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
-	<script src="{{ asset('js/Control.FullScreen.js') }}"></script>
+	<script src="js/Control.FullScreen.js"></script>
 	<script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
 {% endblock %}
